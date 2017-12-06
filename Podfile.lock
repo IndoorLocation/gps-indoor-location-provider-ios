@@ -1,0 +1,12 @@
+PODS:
+  - IndoorLocation (1.0.1)
+
+DEPENDENCIES:
+  - IndoorLocation (~> 1.0)
+
+SPEC CHECKSUMS:
+  IndoorLocation: 34755ac368ef946d1fb44a28aeeb4c222475b29a
+
+PODFILE CHECKSUM: 46178ecb91783218cb6fb63e787d02d786d98763
+
+COCOAPODS: 1.2.0
