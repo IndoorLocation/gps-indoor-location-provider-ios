@@ -11,7 +11,6 @@
         locationManager = [[CLLocationManager alloc] init];
         locationManager.delegate = self;
         isStarted = false;
-        self.name = @"GPS";
     }
     return self;
 }
@@ -50,7 +49,7 @@
     indoorLocation.longitude = location.coordinate.longitude;
     indoorLocation.accuracy = location.horizontalAccuracy;
     indoorLocation.timestamp = location.timestamp;
-    indoorLocation.providerName = self.name;
+    indoorLocation.providerName = [self getName];
     [self dispatchDidUpdateLocation:indoorLocation];
 }
 
