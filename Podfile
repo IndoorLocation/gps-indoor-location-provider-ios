@@ -6,6 +6,6 @@ target 'ILGPSIndoorLocationProvider' do
   use_frameworks!
 
   # Pods for ILGPSIndoorLocationProvider
-  pod 'IndoorLocation', '~> 1.0'
+  pod 'IndoorLocation'
 
 end
