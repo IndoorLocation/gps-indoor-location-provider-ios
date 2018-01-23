@@ -1,11 +1,11 @@
 PODS:
-  - IndoorLocation (1.0.2)
+  - IndoorLocation (1.0.3)
 
 DEPENDENCIES:
   - IndoorLocation
 
 SPEC CHECKSUMS:
-  IndoorLocation: 5bddf78ac26392e1efebdcfbf1504ca6dd831793
+  IndoorLocation: 077b1453d425e2d91b29f497b116d09defeb9b15
 
 PODFILE CHECKSUM: 328ceec29a93f33ba62c8646de72cf7d06c91f4e
 
