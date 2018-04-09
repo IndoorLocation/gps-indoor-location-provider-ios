@@ -81,6 +81,7 @@
 - (void)startUpdating {
     [locationManager startUpdatingLocation];
     isStarted = true;
+    shouldStart = false;
 }
 
 @end
