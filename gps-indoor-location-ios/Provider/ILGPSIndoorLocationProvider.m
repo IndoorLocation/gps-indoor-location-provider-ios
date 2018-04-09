@@ -17,6 +17,16 @@
     return self;
 }
 
+- (instancetype) initWith:(CLLocationManager*) locationManager {
+    self = [super init];
+    if (self) {
+        self->locationManager = locationManager;
+        isStarted = false;
+        shouldStart = false;
+    }
+    return self;
+}
+
 - (BOOL) supportsFloor {
     return false;
 }

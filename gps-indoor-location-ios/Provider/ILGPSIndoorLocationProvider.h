@@ -4,4 +4,6 @@
 
 @interface ILGPSIndoorLocationProvider : ILIndoorLocationProvider <CLLocationManagerDelegate>
 
+- (instancetype) initWith:(CLLocationManager*) locationManager;
+
 @end
