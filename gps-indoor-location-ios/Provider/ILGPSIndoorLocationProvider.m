@@ -16,10 +16,10 @@
     if (self) {
         _locationManager = [[CLLocationManager alloc] init];
         _locationManager.delegate = self;
-        _isStarted = false;
-        _shouldStart = false;
         _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         _locationManager.distanceFilter = 10;
+        _isStarted = false;
+        _shouldStart = false;
     }
     return self;
 }
@@ -48,6 +48,12 @@
         [self.locationManager requestWhenInUseAuthorization];
         self.shouldStart = true;
     }
+}
+
+- (void)startUpdating {
+    [self.locationManager startUpdatingLocation];
+    self.isStarted = true;
+    self.shouldStart = false;
 }
 
 - (void) stop {
@@ -92,12 +98,6 @@
             }
         }
     }
-}
-
-- (void)startUpdating {
-    [self.locationManager startUpdatingLocation];
-    self.isStarted = true;
-    self.shouldStart = false;
 }
 
 @end
