@@ -28,5 +28,4 @@
     [self.gpsProvider start];
 }
 
-
 @end

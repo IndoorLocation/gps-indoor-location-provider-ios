@@ -18,6 +18,8 @@
         _locationManager.delegate = self;
         _isStarted = false;
         _shouldStart = false;
+        _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        _locationManager.distanceFilter = 10;
     }
     return self;
 }
@@ -26,6 +28,7 @@
     self = [super init];
     if (self) {
         _locationManager = locationManager;
+        _locationManager.delegate = self;
         _isStarted = false;
         _shouldStart = false;
     }
@@ -37,8 +40,6 @@
 }
 
 - (void) start {
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    self.locationManager.distanceFilter = 10;
     if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedAlways
         || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse) {
         [self startUpdating];
@@ -55,11 +56,11 @@
 }
 
 - (BOOL) isStarted {
-    return self.isStarted;
+    return _isStarted;
 }
 
 - (BOOL) shouldStart {
-    return self.shouldStart;
+    return _shouldStart;
 }
 
 #pragma mark CLLocationManagerDelegate
