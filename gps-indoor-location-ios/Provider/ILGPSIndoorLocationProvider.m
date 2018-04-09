@@ -1,18 +1,23 @@
 #import "ILGPSIndoorLocationProvider.h"
 
+@interface ILGPSIndoorLocationProvider ()
+
+@property (nonatomic, strong) CLLocationManager* locationManager;
+@property (nonatomic, assign) BOOL isStarted;
+@property (nonatomic, assign) BOOL shouldStart;
+
+@end
+
 @implementation ILGPSIndoorLocationProvider {
-    CLLocationManager* locationManager;
-    BOOL isStarted;
-    BOOL shouldStart;
 }
 
 - (instancetype) init {
     self = [super init];
     if (self) {
-        locationManager = [[CLLocationManager alloc] init];
-        locationManager.delegate = self;
-        isStarted = false;
-        shouldStart = false;
+        _locationManager = [[CLLocationManager alloc] init];
+        _locationManager.delegate = self;
+        _isStarted = false;
+        _shouldStart = false;
     }
     return self;
 }
@@ -20,9 +25,9 @@
 - (instancetype) initWith:(CLLocationManager*) locationManager {
     self = [super init];
     if (self) {
-        self->locationManager = locationManager;
-        isStarted = false;
-        shouldStart = false;
+        _locationManager = locationManager;
+        _isStarted = false;
+        _shouldStart = false;
     }
     return self;
 }
@@ -32,29 +37,29 @@
 }
 
 - (void) start {
-    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    locationManager.distanceFilter = 10;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    self.locationManager.distanceFilter = 10;
     if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedAlways
         || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse) {
         [self startUpdating];
     }
     else {
-        [locationManager requestWhenInUseAuthorization];
-        shouldStart = true;
+        [self.locationManager requestWhenInUseAuthorization];
+        self.shouldStart = true;
     }
 }
 
 - (void) stop {
-    [locationManager stopUpdatingLocation];
-    isStarted = false;
+    [self.locationManager stopUpdatingLocation];
+    self.isStarted = false;
 }
 
 - (BOOL) isStarted {
-    return isStarted;
+    return self.isStarted;
 }
 
 - (BOOL) shouldStart {
-    return shouldStart;
+    return self.shouldStart;
 }
 
 #pragma mark CLLocationManagerDelegate
@@ -81,7 +86,7 @@
         }
             break;
         default:{
-            if (shouldStart) {
+            if (self.shouldStart) {
                 [self startUpdating];
             }
         }
@@ -89,9 +94,9 @@
 }
 
 - (void)startUpdating {
-    [locationManager startUpdatingLocation];
-    isStarted = true;
-    shouldStart = false;
+    [self.locationManager startUpdatingLocation];
+    self.isStarted = true;
+    self.shouldStart = false;
 }
 
 @end

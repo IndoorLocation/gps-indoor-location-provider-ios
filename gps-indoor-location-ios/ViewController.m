@@ -3,10 +3,11 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) ILGPSIndoorLocationProvider* gpsProvider;
+
 @end
 
 @implementation ViewController {
-    ILGPSIndoorLocationProvider* gpsProvider;
 }
 
 - (void)viewDidLoad {
@@ -22,9 +23,9 @@
 }
 
 - (void) mapwizePluginDidLoad:(MapwizePlugin *)mapwizePlugin {
-    gpsProvider = [[ILGPSIndoorLocationProvider alloc] init];
-    [mapwizePlugin setIndoorLocationProvider:gpsProvider];
-    [gpsProvider start];
+    self.gpsProvider = [[ILGPSIndoorLocationProvider alloc] init];
+    [mapwizePlugin setIndoorLocationProvider:self.gpsProvider];
+    [self.gpsProvider start];
 }
 
 

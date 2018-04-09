@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.source       = { :git => "https://github.com/IndoorLocation/gps-indoor-location-provider-ios.git", :tag => "#{s.version}" }
   s.source_files  = "gps-indoor-location-ios/Provider/*.{h,m}"
-  s.dependency "IndoorLocation", "~> 1.0"
+  s.dependency "IndoorLocation", "1.0.4"
 end
