@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		966B3E388A01A4313F365A0B /* Pods_gps_indoor_location_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345A70989D2B2F448286C695 /* Pods_gps_indoor_location_ios.framework */; };
+		E406505F2077859D0084745D /* ILGPSIndoorLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E406505E2077859D0084745D /* ILGPSIndoorLocationProvider.m */; };
+		E48CCE3D20776DD5007AE13A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E48CCE3C20776DD5007AE13A /* AppDelegate.m */; };
+		E48CCE4020776DD5007AE13A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E48CCE3F20776DD5007AE13A /* ViewController.m */; };
+		E48CCE4320776DD5007AE13A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48CCE4120776DD5007AE13A /* Main.storyboard */; };
+		E48CCE4520776DDC007AE13A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48CCE4420776DDC007AE13A /* Assets.xcassets */; };
+		E48CCE4820776DDC007AE13A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48CCE4620776DDC007AE13A /* LaunchScreen.storyboard */; };
+		E48CCE4B20776DDC007AE13A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E48CCE4A20776DDC007AE13A /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		042E2A4EB81E675B0AECDDD1 /* Pods-gps-indoor-location-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gps-indoor-location-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gps-indoor-location-ios/Pods-gps-indoor-location-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		345A70989D2B2F448286C695 /* Pods_gps_indoor_location_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gps_indoor_location_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99E4CFF66CF746745A12918 /* Pods-gps-indoor-location-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gps-indoor-location-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-gps-indoor-location-ios/Pods-gps-indoor-location-ios.release.xcconfig"; sourceTree = "<group>"; };
+		E406505D2077859D0084745D /* ILGPSIndoorLocationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGPSIndoorLocationProvider.h; sourceTree = "<group>"; };
+		E406505E2077859D0084745D /* ILGPSIndoorLocationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGPSIndoorLocationProvider.m; sourceTree = "<group>"; };
+		E48CCE3820776DD5007AE13A /* gps-indoor-location-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gps-indoor-location-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48CCE3B20776DD5007AE13A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E48CCE3C20776DD5007AE13A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E48CCE3E20776DD5007AE13A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E48CCE3F20776DD5007AE13A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E48CCE4220776DD5007AE13A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E48CCE4420776DDC007AE13A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E48CCE4720776DDC007AE13A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E48CCE4920776DDC007AE13A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E48CCE4A20776DDC007AE13A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E48CCE3520776DD5007AE13A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966B3E388A01A4313F365A0B /* Pods_gps_indoor_location_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D27FA73921F25B69E698441 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				345A70989D2B2F448286C695 /* Pods_gps_indoor_location_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6FC6847E2706C5E821D3079 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				042E2A4EB81E675B0AECDDD1 /* Pods-gps-indoor-location-ios.debug.xcconfig */,
+				B99E4CFF66CF746745A12918 /* Pods-gps-indoor-location-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E406505C207785580084745D /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				E406505D2077859D0084745D /* ILGPSIndoorLocationProvider.h */,
+				E406505E2077859D0084745D /* ILGPSIndoorLocationProvider.m */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		E48CCE2F20776DD5007AE13A = {
+			isa = PBXGroup;
+			children = (
+				E48CCE3A20776DD5007AE13A /* gps-indoor-location-ios */,
+				E48CCE3920776DD5007AE13A /* Products */,
+				A6FC6847E2706C5E821D3079 /* Pods */,
+				2D27FA73921F25B69E698441 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E48CCE3920776DD5007AE13A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E48CCE3820776DD5007AE13A /* gps-indoor-location-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E48CCE3A20776DD5007AE13A /* gps-indoor-location-ios */ = {
+			isa = PBXGroup;
+			children = (
+				E406505C207785580084745D /* Provider */,
+				E48CCE3B20776DD5007AE13A /* AppDelegate.h */,
+				E48CCE3C20776DD5007AE13A /* AppDelegate.m */,
+				E48CCE3E20776DD5007AE13A /* ViewController.h */,
+				E48CCE3F20776DD5007AE13A /* ViewController.m */,
+				E48CCE4120776DD5007AE13A /* Main.storyboard */,
+				E48CCE4420776DDC007AE13A /* Assets.xcassets */,
+				E48CCE4620776DDC007AE13A /* LaunchScreen.storyboard */,
+				E48CCE4920776DDC007AE13A /* Info.plist */,
+				E48CCE4A20776DDC007AE13A /* main.m */,
+			);
+			path = "gps-indoor-location-ios";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E48CCE3720776DD5007AE13A /* gps-indoor-location-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E48CCE4E20776DDC007AE13A /* Build configuration list for PBXNativeTarget "gps-indoor-location-ios" */;
+			buildPhases = (
+				3CE5D2CB9AFB6EE16643C712 /* [CP] Check Pods Manifest.lock */,
+				E48CCE3420776DD5007AE13A /* Sources */,
+				E48CCE3520776DD5007AE13A /* Frameworks */,
+				E48CCE3620776DD5007AE13A /* Resources */,
+				316C9EEF409D201CCF408F4E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gps-indoor-location-ios";
+			productName = "gps-indoor-location-ios";
+			productReference = E48CCE3820776DD5007AE13A /* gps-indoor-location-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E48CCE3020776DD5007AE13A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = IndoorLocation;
+				TargetAttributes = {
+					E48CCE3720776DD5007AE13A = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = E48CCE3320776DD5007AE13A /* Build configuration list for PBXProject "gps-indoor-location-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E48CCE2F20776DD5007AE13A;
+			productRefGroup = E48CCE3920776DD5007AE13A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E48CCE3720776DD5007AE13A /* gps-indoor-location-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E48CCE3620776DD5007AE13A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48CCE4820776DDC007AE13A /* LaunchScreen.storyboard in Resources */,
+				E48CCE4520776DDC007AE13A /* Assets.xcassets in Resources */,
+				E48CCE4320776DD5007AE13A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		316C9EEF409D201CCF408F4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-gps-indoor-location-ios/Pods-gps-indoor-location-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/IndoorLocation/IndoorLocation.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${PODS_ROOT}/MapwizeForMapbox/MapwizeForMapbox.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IndoorLocation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapwizeForMapbox.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gps-indoor-location-ios/Pods-gps-indoor-location-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CE5D2CB9AFB6EE16643C712 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gps-indoor-location-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E48CCE3420776DD5007AE13A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48CCE4020776DD5007AE13A /* ViewController.m in Sources */,
+				E48CCE4B20776DDC007AE13A /* main.m in Sources */,
+				E406505F2077859D0084745D /* ILGPSIndoorLocationProvider.m in Sources */,
+				E48CCE3D20776DD5007AE13A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E48CCE4120776DD5007AE13A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E48CCE4220776DD5007AE13A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E48CCE4620776DDC007AE13A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E48CCE4720776DDC007AE13A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E48CCE4C20776DDC007AE13A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E48CCE4D20776DDC007AE13A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E48CCE4F20776DDC007AE13A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 042E2A4EB81E675B0AECDDD1 /* Pods-gps-indoor-location-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W65Z4PGDFW;
+				INFOPLIST_FILE = "gps-indoor-location-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.indoorlocation.gps-indoor-location-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E48CCE5020776DDC007AE13A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B99E4CFF66CF746745A12918 /* Pods-gps-indoor-location-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W65Z4PGDFW;
+				INFOPLIST_FILE = "gps-indoor-location-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.indoorlocation.gps-indoor-location-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E48CCE3320776DD5007AE13A /* Build configuration list for PBXProject "gps-indoor-location-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48CCE4C20776DDC007AE13A /* Debug */,
+				E48CCE4D20776DDC007AE13A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E48CCE4E20776DDC007AE13A /* Build configuration list for PBXNativeTarget "gps-indoor-location-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48CCE4F20776DDC007AE13A /* Debug */,
+				E48CCE5020776DDC007AE13A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E48CCE3020776DD5007AE13A /* Project object */;
+}
