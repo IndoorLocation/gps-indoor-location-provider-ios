@@ -2,10 +2,10 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <IndoorLocation/IndoorLocation.h>
+#import "MWZFollowUserModeEnum.h"
 
 @protocol MWZMapwizePluginDelegate;
 @protocol MWZVenueStateDelegate;
-#import "MWZFollowUserModeEnum.h"
 
 @class MWZOptions;
 @class MWZFollowUserButton;
@@ -17,6 +17,8 @@
 @class MWZVenue;
 @class MWZUniverse;
 @class MWZLatLngFloor;
+@class MWZUISettings;
+@class MWZDirectionOptions;
 
 @import Mapbox;
 
@@ -30,12 +32,12 @@
 
 @property (nonatomic) UIView* bottomLayoutView;
 @property (nonatomic) UIView* topLayoutView;
-@property (nonatomic) UIImageView* compassView;
 
 @property (nonatomic, readonly) ILIndoorLocation* userLocation;
 @property (nonatomic, readonly) NSNumber* userHeading;
 
 - (instancetype) initWith:(MGLMapView*) mglMapView options:(MWZOptions*) options;
+- (instancetype) initWith:(MGLMapView*) mglMapView options:(MWZOptions*) options uiSettings:(MWZUISettings*) settings;
 
 - (void) refreshWithCompletionHandler:(void (^)(void)) handler;
 - (void) grantAccess:(NSString*) accessKey success:(void (^)(void)) success failure:(void (^)(NSError* error)) failure;
@@ -74,7 +76,7 @@
     
 - (void) setStyle:(MWZStyle*) style forPlace:(MWZPlace*) place;
 
-- (void) setDirection:(MWZDirection *)direction  image:(UIImage*) image;
+- (void) setDirection:(MWZDirection *)direction  options:(MWZDirectionOptions*) options;
 - (void) setDirection:(MWZDirection*) direction;
 - (MWZDirection*) getDirection;
 

@@ -25,9 +25,10 @@
 @property(nonatomic, readonly, assign) BOOL areIbeaconsDeployed;
 @property(nonatomic, readonly) NSDate* updated;
 @property(nonatomic, readonly) NSDictionary* data;
+@property(nonatomic, readonly) NSDictionary* indoorLocationProviders;
 
 - (instancetype)initWithIdentifier:(NSString*) identifer name:(NSString*) name alias:(NSString*) alias
-                              icon:(NSString*) icon marker:(MWZLatLngFloor*) marker defaultLanguage:(NSString*) defaultLanguage supportedLanguages:(NSArray<NSString*>*) supportedLanguages geometry:(NSDictionary*) geometry universes:(NSArray<MWZUniverse*>*) universes translations:(NSArray<MWZTranslation*>*) translations isPublished:(BOOL) isPublished areQrcodesDeployed:(BOOL) areQrcodesDeployed areIbeaconsDeployed:(BOOL) areIbeaconsDeployed updated:(NSDate*) updated bounds:(MGLCoordinateBounds) bounds data:(NSDictionary*) data;
+                              icon:(NSString*) icon marker:(MWZLatLngFloor*) marker defaultLanguage:(NSString*) defaultLanguage supportedLanguages:(NSArray<NSString*>*) supportedLanguages geometry:(NSDictionary*) geometry universes:(NSArray<MWZUniverse*>*) universes translations:(NSArray<MWZTranslation*>*) translations isPublished:(BOOL) isPublished areQrcodesDeployed:(BOOL) areQrcodesDeployed areIbeaconsDeployed:(BOOL) areIbeaconsDeployed updated:(NSDate*) updated bounds:(MGLCoordinateBounds) bounds data:(NSDictionary*) data indoorLocationProviders:(NSDictionary*) indoorLocationProviders;
 
 - (MWZUniverse*) defaultUniverse;
 - (NSString*) defaultLanguage;
