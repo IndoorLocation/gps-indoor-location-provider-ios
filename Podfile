@@ -6,6 +6,6 @@ target 'gps-indoor-location-ios' do
   use_frameworks!
 
   # Pods for gps-indoor-location-ios
-  pod 'IndoorLocation'
-  pod 'MapwizeForMapbox'
+  pod 'IndoorLocation', '1.0.4'
+  pod 'MapwizeForMapbox', '1.4.2'
 end
